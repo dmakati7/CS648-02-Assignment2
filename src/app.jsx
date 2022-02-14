@@ -57,7 +57,7 @@ class AddProduct extends React.Component {
                 <form name="productAdd" className="formAdd" onSubmit={this.handleSubmit}>
                     <div>
                         <p>
-                            <label>Category<br/>
+                            <label>Choice of Category<br/>
                             <select id="prdCat" name="category">
                                 <option value="shirts">Shirts</option>
                                 <option value="jeans">Jeans</option>
@@ -80,7 +80,7 @@ class AddProduct extends React.Component {
                             <input type="text" name="prdName"/></label>
                         </p>
                         <p>
-                            <label>Image URL<br/> 
+                            <label>Link to image<br/> 
                             <input type="text" name="prdImg"/></label>
                         </p>
                     </div>
@@ -117,11 +117,11 @@ class Product extends React.Component {
     render() {
         return (
             <div className="container jumbotron">
-                <h1>Inventory</h1>
-                <h3>Showing all availble products</h3><br/>
+                <h1>Product Inventory</h1>
+                <h3>Showing all availble products currently</h3><br/>
                 <hr/><br/>
                 <ProductTable products={this.state.products}/> <br/>
-                <h3>Add a new product to inventory</h3>
+                <h3>Add a new product to the inventory</h3>
                 <hr/>
                 <AddProduct createProduct={this.createProduct}/>
             </div>

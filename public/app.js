@@ -56,7 +56,7 @@ class AddProduct extends React.Component {
       name: "productAdd",
       className: "formAdd",
       onSubmit: this.handleSubmit
-    }, React.createElement("div", null, React.createElement("p", null, React.createElement("label", null, "Category", React.createElement("br", null), React.createElement("select", {
+    }, React.createElement("div", null, React.createElement("p", null, React.createElement("label", null, "Choice of Category", React.createElement("br", null), React.createElement("select", {
       id: "prdCat",
       name: "category"
     }, React.createElement("option", {
@@ -80,7 +80,7 @@ class AddProduct extends React.Component {
     }))), React.createElement("div", null, React.createElement("p", null, React.createElement("label", null, "Product Name", React.createElement("br", null), React.createElement("input", {
       type: "text",
       name: "prdName"
-    }))), React.createElement("p", null, React.createElement("label", null, "Image URL", React.createElement("br", null), React.createElement("input", {
+    }))), React.createElement("p", null, React.createElement("label", null, "Link to image", React.createElement("br", null), React.createElement("input", {
       type: "text",
       name: "prdImg"
     }))))));
@@ -121,9 +121,9 @@ class Product extends React.Component {
   render() {
     return React.createElement("div", {
       className: "container jumbotron"
-    }, React.createElement("h1", null, "Inventory"), React.createElement("h3", null, "Showing all availble products"), React.createElement("br", null), React.createElement("hr", null), React.createElement("br", null), React.createElement(ProductTable, {
+    }, React.createElement("h1", null, "Product Inventory"), React.createElement("h3", null, "Showing all availble products currently"), React.createElement("br", null), React.createElement("hr", null), React.createElement("br", null), React.createElement(ProductTable, {
       products: this.state.products
-    }), " ", React.createElement("br", null), React.createElement("h3", null, "Add a new product to inventory"), React.createElement("hr", null), React.createElement(AddProduct, {
+    }), " ", React.createElement("br", null), React.createElement("h3", null, "Add a new product to the inventory"), React.createElement("hr", null), React.createElement(AddProduct, {
       createProduct: this.createProduct
     }));
   }
