@@ -5,7 +5,7 @@ class ProductTable extends React.Component {
         const productRows = this.props.products.map(product => <ProductRow key={product.id} product={product}/>);
         return (
             <table className="table table-striped">
-                    <tr className="table-dark">
+                    <tr className="table-light">
                         <th>Product Name</th>
                         <th>Price</th>
                         <th>Category</th>
@@ -23,7 +23,7 @@ class ProductRow extends React.Component {
     render() {
         const product = this.props.product;
         return(
-            <tr className="table-dark">
+            <tr className="table-light">
                 <td>{product.productName}</td>
                 <td>${product.productPrice}</td>
                 <td>{product.productCategory}</td>
@@ -59,11 +59,11 @@ class AddProduct extends React.Component {
                         <p>
                             <label>Choice of Category<br/>
                             <select id="prdCat" name="category">
-                                <option value="shirts">Shirts</option>
-                                <option value="jeans">Jeans</option>
-                                <option value="jackets">Jackets</option>
-                                <option value="sweaters">Sweaters</option>
-                                <option value="accessories">Accessories</option>
+                                <option value="Shirts">Shirts</option>
+                                <option value="Jeans">Jeans</option>
+                                <option value="Jackets">Jackets</option>
+                                <option value="Sweaters">Sweaters</option>
+                                <option value="Accessories">Accessories</option>
                             </select></label>
                         </p>
                         <p>

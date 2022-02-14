@@ -9,7 +9,7 @@ class ProductTable extends React.Component {
     return React.createElement("table", {
       className: "table table-striped"
     }, React.createElement("tr", {
-      className: "table-dark"
+      className: "table-light"
     }, React.createElement("th", null, "Product Name"), React.createElement("th", null, "Price"), React.createElement("th", null, "Category"), React.createElement("th", null, "Image")), React.createElement("tbody", null, productRows));
   }
 
@@ -19,7 +19,7 @@ class ProductRow extends React.Component {
   render() {
     const product = this.props.product;
     return React.createElement("tr", {
-      className: "table-dark"
+      className: "table-light"
     }, React.createElement("td", null, product.productName), React.createElement("td", null, "$", product.productPrice), React.createElement("td", null, product.productCategory), React.createElement("td", null, React.createElement("a", {
       href: product.productImage,
       target: "_blank"
@@ -60,15 +60,15 @@ class AddProduct extends React.Component {
       id: "prdCat",
       name: "category"
     }, React.createElement("option", {
-      value: "shirts"
+      value: "Shirts"
     }, "Shirts"), React.createElement("option", {
-      value: "jeans"
+      value: "Jeans"
     }, "Jeans"), React.createElement("option", {
-      value: "jackets"
+      value: "Jackets"
     }, "Jackets"), React.createElement("option", {
-      value: "sweaters"
+      value: "Sweaters"
     }, "Sweaters"), React.createElement("option", {
-      value: "accessories"
+      value: "Accessories"
     }, "Accessories")))), React.createElement("p", null, React.createElement("label", null, "Price Per Unit", React.createElement("br", null), React.createElement("input", {
       type: "text",
       name: "prdPrice",
